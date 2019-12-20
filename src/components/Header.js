@@ -24,8 +24,8 @@ const Section = styled.section`
     }
   }
   .navbar-item {
-    font-weight: 700;
-    font-size: 1.2rem;
+    font-weight: 400;
+    font-size: 1.3rem;
     :hover {
       color: ${props => props.theme.darkAccent};
     }
@@ -64,11 +64,10 @@ export default class Header extends React.Component {
           <nav
             className="navbar"
             role="navigation"
-            aria-label="main navigation"
-          >
+            aria-label="main navigation">
             <div className="navbar-brand">
-              <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+              <Link className="navbar-item"  to="/">
+                <img src="/images/logo-1025.png" alt="site logo" />
               </Link>
               <a
                 href="#"
@@ -81,25 +80,38 @@ export default class Header extends React.Component {
                 aria-label="menu"
                 aria-expanded="false"
                 data-target="navbarBasicExample"
-                onClick={() => this.handleMobileMenu()}
-              >
+                onClick={() => this.handleMobileMenu()}>
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
                 <span aria-hidden="true" />
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
-                <Link to="/" className="navbar-item">
+              <div className="navbar-start navbar-end">
+                <Link to="/" className="navbar-item has-text-white">
                   Home
                 </Link>
-                <Link to="/about" className="navbar-item">
-                  About
+                <Link to="/about" className="navbar-item has-text-white">
+                  Features
                 </Link>
-                <Link to="/news" className="navbar-item">
-                  News
+                <Link to="/news" className="navbar-item has-text-white">
+                  Pricing
                 </Link>
-                <Link to="/contact" className="navbar-item">
+                <div className="navbar-item has-dropdown ">
+                  <a className="navbar-link has-text-white">Blog</a>
+                  <div className="navbar-dropdown has-text-white is-active">
+                    <a className="navbar-item has-text-white">Blog</a>
+                    <a className="navbar-item has-text-white">Single Blog</a>
+                  </div>
+                </div>
+                <div className="navbar-item has-dropdown">
+                  <a className="navbar-link has-text-white">Page</a>
+                  <div className="navbar-dropdown">
+                    <a className="navbar-item has-text-white">Elements</a>
+                    <a className="navbar-item has-text-white">Contact</a>
+                  </div>
+                </div>
+                <Link to="/contact" className="navbar-item has-text-white">
                   Contact
                 </Link>
               </div>
