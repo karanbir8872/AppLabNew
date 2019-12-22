@@ -5,6 +5,7 @@ import Seo from '../components/Seo';
 import Layout from '../components/Layout';
 import HeroHeader from '../components/HeroHeader';
 import Header from '../components/Header';
+import SaveTime from '../components/SaveTime';
 
 const Topcontainer = styled.div`
   background-image: url(/images/banner.png);
@@ -24,6 +25,7 @@ export default class IndexPage extends React.Component {
           <Header />
         </Topcontainer>
         <HeroHeader />
+        <SaveTime />
       </Layout>
     );
   }

@@ -58,10 +58,7 @@ const GlobalStyle = createGlobalStyle`
   .button {
     font-family: ${theme.primaryFontFamily};
   }
-  p {
-    line-height: 1.5rem;
-  }
-  p, .title, .box {
+  .title, .box {
     color: ${theme.textColor} !important;
   }
   .subtitle {

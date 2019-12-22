@@ -16,6 +16,11 @@ const Container = styled.div`
   .pic {
     margin-top: -4rem;
   }
+  .bcolor {
+    background: #37ebed;
+    font-size: 30px;
+    border: none;
+  }
 `;
 const HeroHeader = () => (
   <div className="section">
@@ -26,7 +31,9 @@ const HeroHeader = () => (
           <p className="h1 has-text-white para">
             Get more users to promote your app with this template
           </p>
-          <button className="is-size-5">GET STARTED</button>
+          <button className="button is-large has-text-white bcolor">
+            Get Start Now
+          </button>
         </div>
         <div className="column is-half has-text-centered pic">
           <img src="/images/phone.png" alt="site logo" />
