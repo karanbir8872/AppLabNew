@@ -8,7 +8,6 @@ const Section = styled.div`
     color: #2c2c2c;
   }
 `;
-
 const SaveTime = () => (
   <Section className="section">
     <div className="container">

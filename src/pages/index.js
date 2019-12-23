@@ -6,6 +6,9 @@ import Layout from '../components/Layout';
 import HeroHeader from '../components/HeroHeader';
 import Header from '../components/Header';
 import SaveTime from '../components/SaveTime';
+import SaveTimePass from '../components/SaveTimePass';
+import ScreenShot from '../components/ScreenShot';
+import MiniTextPass from '../components/MiniTextPass';
 
 const Topcontainer = styled.div`
   background-image: url(/images/banner.png);
@@ -26,6 +29,9 @@ export default class IndexPage extends React.Component {
         </Topcontainer>
         <HeroHeader />
         <SaveTime />
+        <SaveTimePass />
+        <ScreenShot />
+        <MiniTextPass />
       </Layout>
     );
   }
