@@ -2,7 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import MiniText from './MiniText';
 
-const Section = styled.div``;
+const Section = styled.div`
+`;
 
 const MiniTextPass = () => (
   <Section className="section">

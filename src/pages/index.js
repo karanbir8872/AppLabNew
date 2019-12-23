@@ -9,6 +9,8 @@ import SaveTime from '../components/SaveTime';
 import SaveTimePass from '../components/SaveTimePass';
 import ScreenShot from '../components/ScreenShot';
 import MiniTextPass from '../components/MiniTextPass';
+import MobilePartOne from '../components/MobilePartOne';
+import MobilePartTwo from '../components/MobilePartTwo';
 
 const Topcontainer = styled.div`
   background-image: url(/images/banner.png);
@@ -32,6 +34,8 @@ export default class IndexPage extends React.Component {
         <SaveTimePass />
         <ScreenShot />
         <MiniTextPass />
+        <MobilePartOne />
+        <MobilePartTwo />
       </Layout>
     );
   }
